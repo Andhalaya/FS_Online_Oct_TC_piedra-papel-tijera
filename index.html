@@ -4,15 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Piedra, papel, tijera</title>
 </head>
 <body>
-  <button class="boton-jugada" data-jugada="piedra">Piedra</button>
-  <button class="boton-jugada" data-jugada="papel">Papel</button>
-  <button class="boton-jugada" data-jugada="tijera">Tijera</button>
-  <div id="resultados"></div>
-  <p id="contador-usuario">Tus puntos: 0</p>
-  <p id="contador-ordenador">Puntos de la máquina: 0</p>
+  <section class="juego">
+
+    <div class="titulo">PIEDRA PAPEL O TIJERA</div>
+
+    <div class="contador">
+      <div class="puntosUsuario">
+        <h2>Tus puntos</h2>
+        <p class="contador-usuario">0</p>
+      </div>
+      <div class="puntosOrdenador">
+        <h2>Puntos de la máquina</h2>
+        <p class="contador-ordenador">0</p>
+      </div>
+    </div>
+
+    <div class="opciones">
+      <h3>Elige un movimiento...</h3>
+      <button class="piedra choice-button">Piedra
+        <img src="./img/fist.png" alt="piedra">
+      </button>
+
+      <button class="papel choice-button">Papel
+        <img src="./img/hand.png" alt="papel">
+      </button>
+      <button class="tijera choice-button">Tijera
+        <img src="./img/victory.png" alt="tijera">
+      </button>
+    </div>
+    
+    <div class="resultados"></div>
+    <button class="resetear">Resetear</button> 
+  </section>
+  
   <script src="./js/script.js"></script>
+
 </body>
 </html>
